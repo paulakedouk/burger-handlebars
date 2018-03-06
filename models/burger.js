@@ -9,8 +9,9 @@ var burger = {
     });
   },
 
-  insertOne: function(burger, cb) {
-    orm.insertOne('burger', burger, function(res) {
+  insertOne: function(cols, vals, cb) {
+    console.log(cols, vals);
+    orm.insertOne('burgers', cols, vals, function(res) {
       // send result to callback
       cb(res);
     });

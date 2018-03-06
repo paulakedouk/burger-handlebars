@@ -9,6 +9,7 @@ $(function() {
         .trim(),
       devoured: 0
     };
+    console.log(newBurger);
 
     $.ajax('/api/burgers', {
       type: 'POST',
@@ -22,7 +23,7 @@ $(function() {
 
   $('.eat-btn').on('click', function(event) {
     var burgerId = $(this).data('id');
-    var newEat = $(this).data('newEat');
+    var newEat = $(this).data('newdevour');
 
     var burgerEaten = {
       devoured: newEat

@@ -4,4 +4,3 @@ VALUES
     ('Double Cheese Burger'),
     ('Turkey Burger'),
     ('Cheese Burger')
-
