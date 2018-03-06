@@ -9,7 +9,7 @@ $(function() {
         .trim(),
       devoured: 0
     };
-    console.log(newBurger);
+    // console.log(newBurger);
 
     $.ajax('/api/burgers', {
       type: 'POST',

@@ -10,7 +10,7 @@ var burger = {
   },
 
   insertOne: function(cols, vals, cb) {
-    console.log(cols, vals);
+    // console.log(cols, vals);
     orm.insertOne('burgers', cols, vals, function(res) {
       // send result to callback
       cb(res);

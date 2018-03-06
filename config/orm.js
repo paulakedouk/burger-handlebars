@@ -60,7 +60,7 @@ var orm = {
     query += ' WHERE ';
     query += condition;
 
-    console.log(query);
+    // console.log(query);
 
     connection.query(query, function(err, res) {
       if (err) {
