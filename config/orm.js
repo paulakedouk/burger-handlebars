@@ -2,8 +2,8 @@ var connection = require('../config/connection.js');
 
 var orm = {
   selectAll: function(table, cb) {
-    var query = 'SELECT * FROM ?? WHERE ?? = ?';
-    connection.query(query, [table, cb], function(err, result) {
+    var query = 'SELECT * FROM burgers';
+    connection.query(query, [table], function(err, result) {
       if (err) throw err;
       console.log(result);
       cb(result);
